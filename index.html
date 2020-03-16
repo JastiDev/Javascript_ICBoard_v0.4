@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>1</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  </head>
+
+  <body onkeypress="onKeySpace(event)">
+    <div class="w3-sidebar w3-bar-block w3-card-4 w3-black" style="width:200px; padding:20px;">
+      <div class="w3-xlarge w3-text-white">
+        IC Board
+      </div>
+      <hr />
+      <label for="input_rows">rows </label>
+      <input id="input_rows" type="number" class="w3-input" style="max-width: 100px;" />
+      <br />
+      <label for="input_cols">columns </label>
+      <input id="input_cols" type="number" class="w3-input" style="max-width: 100px;" />
+      <br />
+      <label for="input_dirs">directions </label>
+      <select class="w3-select" id="input_dirs" style="max-width: 100px;">
+        <option value="4" selected>4</option>
+        <option value="8">8</option>
+      </select>
+
+      <button class="w3-btn w3-pink" onclick="onClickGenerate()" style="margin-top:20px">
+        Generate
+      </button>
+      <hr />
+      <div>
+        Press "Space" key to conncet or disconnect two points after selecting them.
+      </div>
+      <hr />
+      <div>A: <span id="span4a"></span></div>
+      <div>B: <span id="span4b"></span></div>
+      <div>Now: <span id="span4now"></span></div>
+      <hr />
+      <button id="btn_hide_unused" class="w3-btn w3-pink" onclick="toggleUnused(false)" style="margin-top:20px">
+        Hide Unused
+      </button>
+      <button id="btn_show_unused" class="w3-btn w3-pink" onclick="toggleUnused(true)" style="margin-top:20px; display:none;">
+        Show Unused
+      </button>
+    </div>
+
+    <div class="w3-container" style="margin-left:200px; overflow: auto; padding: 50px;">
+      <svg id="svg" width="80%" height="800px" class="w3-card-4" style="background-color: #1A1A1D;"></svg>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
