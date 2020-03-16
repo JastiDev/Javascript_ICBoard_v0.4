@@ -6,5 +6,9 @@ This is for circuit builder simulating script.
 <img src="images/Screenshot 2.png" >
 User can select rows and colums so that they can engage their board size.
 The user have to select two points, then two points keep connecting.
+<<<<<<< HEAD
 This is built with only pure javascript and svg not jquery or bootstrap.
 And it's very responsive with many elemnts.
+=======
+Once they are connected,
+>>>>>>> \
