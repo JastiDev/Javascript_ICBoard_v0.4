@@ -8,3 +8,4 @@ User can select rows and colums so that they can engage their board size.
 The user have to select two points, then two points keep connecting.
 This is built with only pure javascript and svg not jquery or bootstrap.
 And it's very responsive with many elemnts.
+Best regards
